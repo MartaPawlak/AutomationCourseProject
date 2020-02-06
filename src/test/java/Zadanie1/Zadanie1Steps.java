@@ -87,12 +87,8 @@ public class Zadanie1Steps {
 
     @And("^entered country (.*)$")
     public void enteredCountryCountry(String country) {
-//        WebElement Country = driver.findElement(By.name("id_country"));
-//        Actions(driver).keyDown(Keys.CONTROL).click(country);
-
         driver.findElement(By.xpath("/html/body/main/section/div/div/section/section/div/div/form/section/div[10]/div[1]/select/option[1]")).click();
         driver.findElement(By.xpath("/html/body/main/section/div/div/section/section/div/div/form/section/div[10]/div[1]/select/option[2]")).click();
-
     }
 
     @And("^entered phone (.*)$")
@@ -108,11 +104,11 @@ public class Zadanie1Steps {
         Save.click();
     }
 
-    @And("^delete address$")
-    public void deleteAddress() {
-        WebElement Delete = driver.findElement(By.xpath("/html/body/main/section/div/div/section/section/div[1]/article/div[2]/a[2]"));
-        Delete.click();
-            }
+//    @And("^delete address$")
+//    public void deleteAddress() {
+//        WebElement Delete = driver.findElement(By.xpath("/html/body/main/section/div/div/section/section/div[1]/article/div[2]/a[2]"));
+//        Delete.click();
+//            }
 
     @And("^close browser$")
     public void closeBrowser() {
